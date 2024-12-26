@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajasthan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Background Video Container */
+        .background-video-container {
+            position: relative;
+            width: 100%;
+            height: 300px; /* Adjust video height */
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Content Section */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .content h1 {
+            font-size: 3em;
+        }
+
+        .content p {
+            font-size: 1.5em;
+            text-shadow:
+                2px 2px 0px black,
+                -2px -2px 0px black,
+                2px -2px 0px black,
+                -2px 2px 0px black;
+        }
+
+        /* Blog Content Styling */
+        .other-section {
+            padding: 20px;
+            text-align: left;
+            background-color: #fffbe0; /* Very light pastel yellow */
+        }
+
+        .other-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .other-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Back to Home Button */
+        .back-button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video Section -->
+    <div class="background-video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="raj2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to Rajasthan</h1>
+            <p>Explore the majestic lands of Rajasthan.</p>
+        </div>
+    </div>
+
+    <!-- Blog Content Section -->
+    <div class="other-section">
+        <h2>About Rajasthan</h2>
+        <p>Rajasthan, often referred to as "The Land of Kings," is a vibrant and culturally rich state located in the northwestern part of India. Known for its majestic palaces, grand forts, and colorful traditions, Rajasthan is a place where history and modernity coexist harmoniously. The state boasts a rich cultural heritage, deeply rooted in its royal past, with iconic cities like Jaipur, Udaipur, Jodhpur, and Jaisalmer. Rajasthan's architectural wonders, such as the Amber Fort, City Palace, and Hawa Mahal, are a testament to its glorious history and artistic brilliance. Visitors can also experience the vibrant festivals, folk music, dance, and traditional crafts that form an integral part of the state's identity.</p>
+
+        <p>In addition to its rich history and culture, Rajasthan is home to the stunning Thar Desert, offering a unique experience of desert safaris and camping under the stars. The state's diverse landscape includes not only arid deserts but also lush forests, lakes, and hill stations like Mount Abu. Rajasthan's cuisine is equally captivating, with spicy and flavorful dishes such as dal baati churma, gatte ki sabzi, and laal maas. The state's hospitality is world-renowned, with the warm and welcoming "Padharo Mhare Desh" greeting. Whether it's the beauty of its landscapes, the grandeur of its forts, or the warmth of its people, Rajasthan offers an unforgettable experience to every traveler.</p>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="back-button-container">
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+</body>
+</html>

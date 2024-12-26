@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#header-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-content {
+    color: #fff;
+    z-index: 1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+header a {
+    display: inline-block;
+    background: #ff4500;
+    color: #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+header a:hover {
+    background: #e63e00;
+}
+
+        
+
+        header h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        header a {
+            display: inline-block;
+            background: #ff4500;
+            color: #fff;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        header a:hover {
+            background: #e63e00;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+        }
+
+        .card-content p {
+            margin: 0 0 15px;
+        }
+
+        .card-content a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ff4500;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <video autoplay muted loop id="header-video">
+            <source src="your-video-file.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-content">
+            <h1>Vibrant India Trails</h1>
+            <p>Explore breathtaking destinations and cultures of different parts of India</p>
+            <a href="#destinations">Explore Now</a>
+        </div>
+    </header>
+    
+
+    <div class="container" id="destinations">
+        <h2>Featured Stories</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="desert.jpg" alt="Rajasthan">
+                <div class="card-content">
+                    <h3>Rajasthan - Land of Kings</h3>
+                    <p>Discover the vibrant culture and majestic forts of Rajasthan.</p>
+                    <a href="rajasthan.html">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="himachal.jpeg" alt="Himachal">
+                <div class="card-content">
+                    <h3>Himachal Pradesh - Himalayan Paradise</h3>
+                    <p>Experience serene mountains and adventurous trails.</p>
+                    <a href="himachal.html">Read More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="bihar.jpeg" alt="Bihar">
+                <div class="card-content">
+                    <h3>Bihar - Cradle of Ancient India</h3>
+                    <p>Explore historical sites and spiritual experiences.</p>
+                    <a href="bihar.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vibrant India Trails. Made with ❤️ by Shreyansh. <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+
+</html>
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bihar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        .background-video-container {
+            position: relative;
+            width: 100%;
+            height: 300px; 
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .content h1 {
+            font-size: 3em;
+        }
+
+        .content p {
+            font-size: 1.5em;
+            text-shadow:
+                2px 2px 0px black,
+                -2px -2px 0px black,
+                2px -2px 0px black,
+                -2px 2px 0px black;
+        }
+
+     
+        .other-section {
+            padding: 20px;
+            text-align: left;
+            background-color: #e0f7e0; 
+        }
+
+        .other-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .other-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        
+        .back-button-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video Section -->
+    <div class="background-video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="biharvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to Bihar</h1>
+            <p>Discover the rich heritage of Bihar.</p>
+        </div>
+    </div>
+
+    <!-- Blog Content Section -->
+    <div class="other-section">
+        <h2>About Bihar</h2>
+        <p>Bihar, located in eastern India, is one of the oldest states in India with a rich historical and cultural heritage. It is the birthplace of several major religions, including Buddhism and Jainism. Bihar is home to significant historical sites such as the ancient city of Patna, the ruins of Nalanda University, and Bodh Gaya, where Lord Buddha attained enlightenment. The state also played an important role in India's freedom struggle. Its rich cultural traditions, including folk music, dance, and festivals like Chhath, make it an important cultural hub.</p>
+
+        <p>The state's agricultural and industrial development is also noteworthy. Bihar is primarily an agricultural state, known for its production of crops like rice, maize, and wheat. Additionally, Bihar has a growing industrial sector, including sectors like manufacturing, education, and healthcare. With its strategic location, vibrant culture, and historical significance, Bihar is a state that continues to contribute greatly to India's heritage and development.</p>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="back-button-container">
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+
+</body>
+</html>

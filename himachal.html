@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himachal Pradesh</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        
+        .background-video-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1; 
+        }
+
+        
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            z-index: 1;  
+        }
+
+        .content h1 {
+            font-size: 3em;
+        }
+
+        .content p {
+            font-size: 1.5em;
+            text-shadow:
+                2px 2px 0px black,   
+                -2px -2px 0px black, 
+                2px -2px 0px black, 
+                -2px 2px 0px black;  
+        }
+
+        
+        .other-section {
+            padding: 20px;
+            text-align: left;
+            background-color: #f9f9f9;
+        }
+
+        .other-section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .other-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .back-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF; /* Bootstrap primary blue color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+    </style>
+</head>
+<body>
+
+ 
+    <div class="background-video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="him2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to Himachal Pradesh</h1>
+            <p>Explore the serene beauty of Himachal Pradesh.</p>
+        </div>
+    </div>
+
+   
+    <div class="other-section">
+        <h2>About Himachal Pradesh</h2>
+        <p>Himachal Pradesh, located in the northern part of India, is a state known for its breathtaking landscapes, snow-capped mountains, and rich cultural heritage. Famous for its pristine hill stations like Shimla, Manali, Dharamshala, and Kullu, Himachal Pradesh offers a peaceful retreat from the hustle and bustle of city life. The state's natural beauty is complemented by its diverse flora and fauna, making it a paradise for nature lovers and adventure enthusiasts. Himachal Pradesh is also home to numerous temples, monasteries, and historic forts, each telling a story of its royal past.</p>
+
+        <p>The state is a haven for adventure activities, including trekking, skiing, paragliding, and river rafting. With its favorable climate and stunning landscapes, Himachal Pradesh attracts tourists year-round. The warm hospitality of its people, along with its vibrant culture and festivals, makes Himachal Pradesh a unique destination. Whether you're visiting the tranquil hill stations, seeking adventure, or immersing yourself in the state's rich traditions, Himachal Pradesh promises a memorable experience for every traveler.</p>
+    </div>
+    <div class="back-button-container">
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+    
+</body>
+</html>
